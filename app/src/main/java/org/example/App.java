@@ -10,14 +10,12 @@ public class App {
     }
 
     public static void main(String[] args) {
-        // Create an instance of the App class
         App app = new App();
 
-        // Example: Calculate the area of a circle with radius 5
         double radius = 5.0;
         double area = app.calculateArea(radius);
 
-        // Print the area
+      
         System.out.println("The area of the circle with radius " + radius + " is: " + area);
     }
 }
