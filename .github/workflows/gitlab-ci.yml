@@ -29,8 +29,8 @@ jobs:
 
       # Build the project
       - name: Build the project
-        run: ./gradlew build --no-daemon
+        run: ./gradlew build --no-daemon 
 
       # Run tests
       - name: Run tests
-        run: ./gradlew test --no-daemon
+        run: ./gradlew test --no-daemon --rerun-tasks --warning-mode all
