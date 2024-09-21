@@ -27,6 +27,10 @@ jobs:
       - name: Verify Java version
         run: java -version
 
-      # Build and test the project with Gradle 8.10.1
-      - name: Build and run tests
+      # Build the project
+      - name: Build the project
         run: ./gradlew build --no-daemon
+
+      # Run tests
+      - name: Run tests
+        run: ./gradlew test --no-daemon
